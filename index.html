@@ -1,1 +1,817 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About MNM YOUNUS — Visionary, Founder of Y, IT Professional | mnmyounus</title>
+  <meta name="description" content="MNM YOUNUS (@mnmyounus) — 17-year-old visionary, founder of Y mega-corporation, IT professional, Muslim, future UN & EU Secretary-General. Learn about the Y ecosystem, YNation, YPlace Mars, and the vision to reshape human civilization."/>
+  <meta name="keywords" content="MNM YOUNUS, mnmyounus, Y corporation, YNation, YPlace, visionary, IT professional, human rights, privacy, Muslim, Y ecosystem, YCar, YBank, YNet, YMall, Y SuperSystem, Google, Meta, Apple, transparency, UN, EU"/>
+  <meta name="author" content="MNM YOUNUS"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://mnmyounus.github.io/vision"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile"/>
+  <meta property="og:title" content="MNM YOUNUS — Visionary, Founder of Y"/>
+  <meta property="og:description" content="17-year-old visionary architecting a new world order through the Y ecosystem, YNation, and interplanetary settlement YPlace on Mars."/>
+  <meta property="og:url" content="https://mnmyounus.github.io/vision"/>
+  <meta property="og:image" content="https://mnmyounus.github.io/hidden.jpg"/>
+  <meta property="og:site_name" content="MNM YOUNUS Portfolio"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="MNM YOUNUS — Visionary, Founder of Y"/>
+  <meta name="twitter:description" content="17-year-old visionary, IT professional, Muslim, founder of Y mega-corporation. Future UN & EU Sec-Gen."/>
+  <meta name="twitter:image" content="https://mnmyounus.github.io/hidden.jpg"/>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "MNM YOUNUS",
+    "alternateName": "@mnmyounus",
+    "description": "17-year-old visionary, founder of Y mega-corporation, IT professional, Muslim, human rights advocate",
+    "url": "https://mnmyounus.github.io/vision",
+    "image": "https://mnmyounus.github.io/hidden.jpg",
+    "jobTitle": "IT Professional, Developer, Founder of Y",
+    "knowsAbout": ["Neuroscience","Information Technology","Software Development","Global Diplomacy","Military Intelligence","International Law","Privacy","Cybersecurity","Human Rights","Artificial Intelligence"],
+    "memberOf": [
+      {"@type":"Organization","name":"Amnesty International"},
+      {"@type":"Organization","name":"UNICEF"},
+      {"@type":"Organization","name":"Google Maps Local Guides"}
+    ],
+    "sameAs": ["https://mnmyounus.github.io","https://mnmyounus.github.io/ysocial"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --black:#020408;--deep:#050d14;--surface:#0a1628;--border:#0f2a44;
+      --accent:#00d4ff;--gold:#c9a227;--red:#ff3b3b;--green:#00ff88;
+      --text:#c8d8e8;--muted:#4a6278;
+      --mono:'Share Tech Mono',monospace;
+      --display:'Bebas Neue',sans-serif;
+      --body:'Syne',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--text);font-family:var(--body);overflow-x:hidden}
+
+    /* BG */
+    .bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;
+      background-image:linear-gradient(rgba(0,212,255,.025) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(0,212,255,.025) 1px,transparent 1px);
+      background-size:60px 60px}
+    .bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+      background:radial-gradient(ellipse 65% 55% at 8% 12%,rgba(0,212,255,.055) 0%,transparent 70%),
+        radial-gradient(ellipse 45% 45% at 90% 85%,rgba(201,162,39,.045) 0%,transparent 70%)}
+    body::after{content:'';position:fixed;inset:0;z-index:2;pointer-events:none;
+      background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.04) 3px,rgba(0,0,0,.04) 4px)}
+
+    /* ── FLOATING BALL NAV ── */
+    .float-nav{
+      position:fixed;bottom:32px;left:50%;transform:translateX(-50%);
+      z-index:500;display:flex;align-items:center;
+      background:rgba(5,13,20,.88);backdrop-filter:blur(18px);
+      border:1px solid var(--border);border-radius:50px;
+      padding:10px 20px;gap:4px;
+      box-shadow:0 8px 40px rgba(0,212,255,.12),0 2px 8px rgba(0,0,0,.5);
+      transition:opacity .3s;
+    }
+    .float-nav a,.float-nav button{
+      font-family:var(--mono);font-size:.62rem;color:var(--muted);
+      text-decoration:none;background:none;border:none;cursor:pointer;
+      padding:6px 10px;border-radius:30px;letter-spacing:.06em;
+      transition:color .2s,background .2s;white-space:nowrap;
+    }
+    .float-nav a:hover,.float-nav button:hover{color:var(--accent);background:rgba(0,212,255,.08)}
+    .float-nav a.active{color:var(--accent);background:rgba(0,212,255,.1)}
+    .float-nav .nav-sep{width:1px;height:14px;background:var(--border);margin:0 2px;flex-shrink:0}
+    .float-nav .nav-logo-pill{
+      font-family:var(--display);font-size:.9rem;color:var(--accent);
+      letter-spacing:.1em;margin-right:6px;padding:0 8px 0 2px;
+      border-right:1px solid var(--border);
+    }
+    .float-nav .nav-logo-pill span{color:var(--gold)}
+
+    /* mobile: stack vertically in corner */
+    @media(max-width:700px){
+      .float-nav{
+        bottom:18px;left:auto;right:16px;transform:none;
+        flex-direction:column;align-items:flex-end;padding:10px 14px;gap:2px;
+        border-radius:16px;
+      }
+      .float-nav .nav-sep{display:none}
+      .float-nav a,.float-nav button{font-size:.58rem;padding:5px 8px}
+    }
+
+    .page{position:relative;z-index:10;max-width:1100px;margin:0 auto;padding:0 28px}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+    /* ── HERO ── */
+    .hero{min-height:100vh;display:flex;align-items:center;padding-top:40px}
+    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;width:100%}
+    .hero-tag{font-family:var(--mono);font-size:.7rem;color:var(--green);letter-spacing:.2em;
+      text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px;min-height:1.2em}
+    .hero-tag::before{content:'';width:26px;height:1px;background:var(--green);flex-shrink:0}
+    .hero-name{font-family:var(--display);font-size:clamp(3rem,7vw,6.5rem);
+      line-height:.92;letter-spacing:.04em;color:#fff;margin-bottom:10px}
+    .hero-name .hl{color:var(--accent)}
+    .hero-sub{font-family:var(--mono);font-size:.7rem;color:var(--gold);letter-spacing:.09em;
+      margin-bottom:20px;line-height:2}
+    .hero-desc{font-size:.97rem;line-height:1.82;color:var(--muted);max-width:500px;margin-bottom:24px}
+    .hero-desc strong{color:var(--text)}
+    .badges{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:26px}
+    .badge{font-family:var(--mono);font-size:.58rem;padding:3px 9px;border:1px solid currentColor;letter-spacing:.09em;text-transform:uppercase}
+    .ba{color:var(--accent)}.bg2{color:var(--gold)}.bg3{color:var(--green)}.br{color:var(--red)}
+    .btn{display:inline-flex;align-items:center;gap:7px;padding:11px 24px;
+      border:1px solid var(--accent);color:var(--accent);font-family:var(--mono);
+      font-size:.76rem;letter-spacing:.1em;text-decoration:none;
+      position:relative;overflow:hidden;transition:color .2s}
+    .btn::before{content:'';position:absolute;inset:0;background:var(--accent);
+      transform:translateX(-101%);transition:transform .22s ease;z-index:-1}
+    .btn:hover{color:var(--black)}.btn:hover::before{transform:translateX(0)}
+    .btn-gold{border-color:var(--gold);color:var(--gold)}.btn-gold::before{background:var(--gold)}.btn-gold:hover{color:var(--black)}
+
+    /* ID CARD */
+    .id-card{background:var(--surface);border:1px solid var(--border);padding:28px;position:relative;overflow:hidden}
+    .id-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--gold))}
+    .id-hdr{font-family:var(--mono);font-size:.58rem;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;display:flex;justify-content:space-between}
+    .id-hdr em{color:var(--red);font-style:normal;animation:blink 1.4s infinite}
+    .id-row{display:flex;justify-content:space-between;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(15,42,68,.8)}
+    .id-row:last-of-type{border-bottom:none}
+    .id-k{font-family:var(--mono);font-size:.6rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;flex:0 0 96px}
+    .id-v{font-family:var(--mono);font-size:.74rem;color:var(--text);text-align:right;flex:1}
+    .id-v.a{color:var(--accent)}.id-v.g{color:var(--gold)}.id-v.gr{color:var(--green)}
+    .id-stamp{margin-top:16px;padding:5px 11px;border:2px solid var(--gold);display:inline-block;
+      font-family:var(--display);font-size:1rem;color:var(--gold);letter-spacing:.15em;transform:rotate(-4deg);opacity:.55}
+
+    /* SECTIONS */
+    section{padding:96px 0;position:relative}
+    .s-label{font-family:var(--mono);font-size:.62rem;color:var(--accent);letter-spacing:.24em;text-transform:uppercase;margin-bottom:10px}
+    .s-title{font-family:var(--display);font-size:clamp(2rem,5vw,3.6rem);color:#fff;letter-spacing:.06em;margin-bottom:34px;line-height:1}
+    .s-title span{color:var(--accent)}
+    .divider{width:48px;height:2px;background:linear-gradient(90deg,var(--accent),transparent);margin-bottom:38px}
+
+    /* ABOUT TWO COL */
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+
+    /* TERMINAL */
+    .term{background:#030b10;border:1px solid var(--border);overflow:hidden}
+    .term-bar{background:#0d1f2d;padding:8px 15px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--border)}
+    .td{width:10px;height:10px;border-radius:50%}
+    .td.r{background:#ff5f56}.td.y{background:#ffbd2e}.td.g{background:#27c93f}
+    .term-ttl{font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-left:5px}
+    .term-body{padding:20px 24px}
+    .tl{font-family:var(--mono);font-size:.75rem;line-height:2;color:var(--muted)}
+    .tl .p{color:var(--green)}.tl .c{color:var(--text)}.tl .o{color:var(--accent)}.tl .cm{color:#2a5070}
+    .tcur{display:inline-block;width:7px;height:12px;background:var(--accent);vertical-align:middle;animation:blink 1s infinite}
+
+    /* MANIFESTO */
+    .mf-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+    .mf-block{background:var(--surface);border:1px solid var(--border);padding:28px;position:relative;transition:border-color .25s}
+    .mf-block:hover{border-color:var(--accent)}
+    .mf-num{font-family:var(--display);font-size:3rem;color:var(--border);position:absolute;top:8px;right:12px;line-height:1;pointer-events:none}
+    .mf-block h3{font-size:.88rem;font-weight:700;color:var(--gold);margin-bottom:8px}
+    .mf-block p{font-size:.83rem;line-height:1.72;color:var(--muted)}
+    .mf-block p strong{color:var(--text)}
+
+    /* Y GRID */
+    .y-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .y-card{background:var(--deep);border:1px solid var(--border);padding:20px 17px;
+      position:relative;overflow:hidden;transition:border-color .25s,transform .25s}
+    .y-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .y-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;
+      background:linear-gradient(90deg,var(--accent),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .25s}
+    .y-card:hover::after{transform:scaleX(1)}
+    .y-icon{font-size:1.3rem;margin-bottom:8px}
+    .y-name{font-family:var(--display);font-size:1.08rem;color:var(--accent);letter-spacing:.06em;margin-bottom:4px}
+    .y-desc{font-family:var(--mono);font-size:.63rem;color:var(--muted);line-height:1.6}
+
+    /* ORGS */
+    .orgs{display:flex;flex-wrap:wrap;gap:8px}
+    .org{font-family:var(--mono);font-size:.64rem;padding:5px 12px;border:1px solid var(--border);
+      color:var(--muted);letter-spacing:.06em;transition:border-color .2s,color .2s;cursor:default}
+    .org:hover{border-color:var(--accent);color:var(--accent)}
+
+    /* TIMELINE */
+    .timeline{position:relative;padding-left:26px}
+    .timeline::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:1px;background:linear-gradient(180deg,var(--accent),transparent)}
+    .ti{position:relative;margin-bottom:36px;opacity:0;transform:translateX(-14px);transition:opacity .5s,transform .5s}
+    .ti.vis{opacity:1;transform:translateX(0)}
+    .ti-dot{position:absolute;left:-32px;top:6px;width:11px;height:11px;border:2px solid var(--accent);background:var(--black);border-radius:50%}
+    .ti-dot::after{content:'';position:absolute;inset:2px;background:var(--accent);border-radius:50%}
+    .ti-org{font-family:var(--mono);font-size:.61rem;color:var(--gold);letter-spacing:.13em;text-transform:uppercase;margin-bottom:4px}
+    .ti-role{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:5px}
+    .ti-desc{font-size:.83rem;color:var(--muted);line-height:1.65;max-width:540px}
+
+    /* VALUES */
+    .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+    .val-card{background:var(--deep);border:1px solid var(--border);padding:22px 18px;
+      transition:transform .25s,border-color .25s;position:relative;overflow:hidden}
+    .val-card:hover{transform:translateY(-3px);border-color:var(--accent)}
+    .val-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;
+      background:linear-gradient(90deg,var(--accent),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .25s}
+    .val-card:hover::after{transform:scaleX(1)}
+    .val-icon{font-size:1.3rem;margin-bottom:8px}
+    .val-ttl{font-size:.87rem;font-weight:700;color:var(--text);margin-bottom:5px}
+    .val-txt{font-family:var(--mono);font-size:.64rem;color:var(--muted);line-height:1.6}
+
+    /* QUOTE */
+    .quote{border-left:3px solid var(--gold);padding:14px 24px;background:var(--surface);margin:42px 0}
+    .quote-t{font-family:var(--display);font-size:clamp(1.2rem,3vw,1.8rem);color:#fff;letter-spacing:.04em;line-height:1.25;margin-bottom:8px}
+    .quote-a{font-family:var(--mono);font-size:.64rem;color:var(--gold);letter-spacing:.13em}
+
+    /* DISCLAIMER */
+    .disc{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--gold);padding:16px 24px;margin-top:44px}
+    .disc p{font-family:var(--mono);font-size:.69rem;color:var(--muted);line-height:1.75}
+    .disc p strong{color:var(--gold)}
+    .disc a{color:var(--accent);text-decoration:none}
+    .disc a:hover{text-decoration:underline}
+
+    /* GLITCH */
+    .glitch{position:relative;display:inline-block}
+    .glitch::before,.glitch::after{content:attr(data-text);position:absolute;top:0;left:0;font-family:inherit;font-size:inherit;color:inherit;width:100%}
+    .glitch::before{color:var(--red);clip-path:polygon(0 0,100% 0,100% 35%,0 35%);animation:g1 4.5s infinite steps(1)}
+    .glitch::after{color:var(--accent);clip-path:polygon(0 65%,100% 65%,100% 100%,0 100%);animation:g2 4.5s infinite steps(1)}
+    @keyframes g1{0%,94%{transform:none}95%{transform:translateX(-3px)}97%{transform:translateX(3px)}100%{transform:none}}
+    @keyframes g2{0%,92%{transform:none}93%{transform:translateX(3px)}96%{transform:translateX(-2px)}100%{transform:none}}
+
+    /* FOOTER */
+    footer{border-top:1px solid var(--border);padding:34px 0 80px}
+    .foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .foot-logo{font-family:var(--display);font-size:1.3rem;color:var(--accent);letter-spacing:.1em}
+    .foot-note{font-family:var(--mono);font-size:.6rem;color:var(--muted);letter-spacing:.09em}
+    .foot-note span{color:var(--green)}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+    .reveal.vis{opacity:1;transform:none}
+
+    @media(max-width:900px){
+      .hero-inner,.two-col,.mf-grid{grid-template-columns:1fr;gap:28px}
+      .y-grid,.val-grid{grid-template-columns:1fr 1fr}
+      section{padding:64px 0}
+    }
+    @media(max-width:480px){
+      .y-grid,.val-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+ <!-- Welcome Entrance — ribbon + earth-emoji fall -->
+<canvas id="welcomeCanvas" style="position:fixed;inset:0;z-index:9998;pointer-events:none;"></canvas>
+<div id="welcomeMessage" style="position:fixed;top:38%;left:50%;transform:translate(-50%,-50%) scale(0.9);opacity:0;z-index:9999;pointer-events:none;text-align:center;font-family:'Inter',-apple-system,sans-serif;transition:opacity .6s ease, transform .6s ease;">
+  <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4FD1C5;margin-bottom:10px;">Welcome</div>
+  <div style="font-size:clamp(1.4rem,4vw,2.2rem);font-weight:800;color:#fff;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(0,0,0,.5);">MNM Younus</div>
+</div>
+<style>
+  @media (prefers-reduced-motion: reduce){
+    #welcomeCanvas, #welcomeMessage{ display:none !important; }
+  }
+</style>
+<script>
+(function(){
+  "use strict";
+  const canvas = document.getElementById('welcomeCanvas');
+  const msg = document.getElementById('welcomeMessage');
+  const ctx = canvas.getContext('2d');
+  let pieces = [];
+  let running = false;
+
+  function resize(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+
+  const RIBBON_COLORS = ['#4FD1C5', '#5AC8FA', '#8BD17C', '#B892FF', '#FFFFFF'];
+
+  function makePiece(){
+    const isEmoji = Math.random() < 0.25;
+    return {
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * 300,
+      w: isEmoji ? 20 + Math.random() * 10 : 6 + Math.random() * 4,
+      h: isEmoji ? 20 + Math.random() * 10 : 16 + Math.random() * 14,
+      color: RIBBON_COLORS[Math.floor(Math.random() * RIBBON_COLORS.length)],
+      rot: Math.random() * Math.PI * 2,
+      rotSpeed: (Math.random() - 0.5) * 0.1,
+      vy: isEmoji ? 1.6 + Math.random() * 1.6 : 2.2 + Math.random() * 2.6,
+      vx: (Math.random() - 0.5) * 2,
+      sway: Math.random() * Math.PI * 2,
+      swaySpeed: 0.02 + Math.random() * 0.02,
+      isEmoji: isEmoji
+    };
+  }
+
+  function launch(){
+    resize();
+    pieces = [];
+    const count = Math.min(120, Math.floor(window.innerWidth / 9));
+    for(let i = 0; i < count; i++) pieces.push(makePiece());
+
+    msg.style.opacity = '1';
+    msg.style.transform = 'translate(-50%,-50%) scale(1)';
+
+    running = true;
+    let elapsed = 0;
+    const fadeStart = 2200;
+    const totalLife = 3400;
+    let lastTime = performance.now();
+
+    function tick(now){
+      const dt = Math.min(now - lastTime, 40);
+      lastTime = now;
+      elapsed += dt;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      let fade = 1;
+      if(elapsed > fadeStart) fade = Math.max(0, 1 - (elapsed - fadeStart) / (totalLife - fadeStart));
+
+      pieces.forEach(function(p){
+        p.sway += p.swaySpeed;
+        p.x += p.vx + Math.sin(p.sway) * 0.6;
+        p.y += p.vy;
+        p.rot += p.rotSpeed;
+
+        ctx.save();
+        ctx.globalAlpha = fade;
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot);
+        if(p.isEmoji){
+          ctx.font = p.w + 'px sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('🌍', 0, 0);
+        } else {
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+        }
+        ctx.restore();
+      });
+
+      if(elapsed < totalLife){
+        requestAnimationFrame(tick);
+      } else {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        msg.style.opacity = '0';
+        msg.style.transform = 'translate(-50%,-50%) scale(0.9)';
+        running = false;
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  window.__playWelcomeEntrance = function(){ if(!running) launch(); };
+})();
+</script>
+
+<!-- Hidden Audio Player Engine -->
+<audio id="bgMusicPlayer" src="YPlace_Mars.mp3" loop preload="auto"></audio>
+
+<!-- Mute Button Controller -->
+<div style="position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.85); padding: 8px; border-radius: 50%; z-index: 9999; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display:flex; align-items:center;">
+  <button id="bgMusicMuteBtn" aria-label="Mute music" style="background:rgba(255,255,255,0.15); border:none; color:#fff; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center;">🔊</button>
+</div>
+<script>
+  let isMuted = false;
+  const player = document.getElementById('bgMusicPlayer');
+  const muteBtn = document.getElementById('bgMusicMuteBtn');
+  document.addEventListener('click', function unlockPage() {
+    player.play().catch(err => console.log("Autoplay blocked until interaction."));
+    if (typeof window.__playWelcomeEntrance === 'function') window.__playWelcomeEntrance();
+  }, { once: true });
+  muteBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    isMuted = !isMuted;
+    player.muted = isMuted;
+    muteBtn.textContent = isMuted ? "🔇" : "🔊";
+  });
+</script>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
+<!-- ── FLOATING BALL NAV ── -->
+<nav class="float-nav" aria-label="Site navigation">
+  <span class="nav-logo-pill">M<span>.</span>YOUNUS</span>
+  <a href="https://mnmyounus.github.io/" title="Home">Home</a>
+  <div class="nav-sep"></div>
+  <a href="#about" title="About MNM YOUNUS">About</a>
+  <div class="nav-sep"></div>
+  <a href="#vision" title="Vision & Manifesto">Vision</a>
+  <div class="nav-sep"></div>
+  <a href="#y-ecosystem" title="Y Ecosystem">Y World</a>
+  <div class="nav-sep"></div>
+  <a href="#roles" title="Current Roles">Roles</a>
+  <div class="nav-sep"></div>
+  <a href="#values" title="Core Values">Values</a>
+  <div class="nav-sep"></div>
+  <a href="https://mnmyounus.github.io/skills" title="Skills">Skills</a>
+  <div class="nav-sep"></div>
+  <a href="https://mnmyounus.github.io/#contact" title="Contact">Contact</a>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero" id="top">
+  <div class="page">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag" id="htag">&nbsp;</div>
+        <h1 class="hero-name">
+          <span class="glitch" data-text="MNM">MNM</span><br/>
+          <span class="hl">YOUNUS</span>
+        </h1>
+        <div class="hero-sub" aria-label="MNM YOUNUS titles and roles">
+          @mnmyounus &nbsp;·&nbsp; 🧠 Ph.D &nbsp;·&nbsp; 🧬 Neurologist<br/>
+          💸 Future Richest Person in the Universe<br/>
+          🌍 UN &amp; 🇪🇺 EU Sec-Gen &nbsp;·&nbsp; 💻 IT Professional<br/>
+          🧠 Intelligent &nbsp;·&nbsp; 🪖 Military Strategist &nbsp;·&nbsp; ⚖️ Judicial Mind<br/>
+          👨‍💻 Developer &nbsp;·&nbsp; 🎨 Creative Thinker &nbsp;·&nbsp; ☪️ Muslim &nbsp;·&nbsp; Age 17
+        </div>
+        <p class="hero-desc">
+          Founder of <strong>Y</strong> — the most ethical mega-corporation in human history.
+          Architecting a new world order through <strong>technology, transparency,</strong> and
+          <strong>human rights</strong>. Location: <strong>UNKNOWN</strong>.
+        </p>
+        <div class="badges" aria-label="Key identity tags">
+          <span class="badge bg3">☪ Muslim</span>
+          <span class="badge ba">🔒 Privacy</span>
+          <span class="badge bg2">⚖ Human Rights</span>
+          <span class="badge br">⚡ Visionary</span>
+          <span class="badge ba">🌍 Y Founder</span>
+          <span class="badge bg2">🚀 YPlace Mars</span>
+          <span class="badge bg3">🌐 YNation</span>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="#about" class="btn">[ READ MY STORY ]</a>
+          <a href="#y-ecosystem" class="btn btn-gold">[ THE Y WORLD ]</a>
+        </div>
+      </div>
+
+      <!-- ID CARD -->
+      <div class="id-card reveal">
+        <div class="id-hdr"><span>CLEARANCE: OPEN</span><em>● LIVE</em></div>
+        <div class="id-row"><div class="id-k">HANDLE</div><div class="id-v a">@mnmyounus</div></div>
+        <div class="id-row"><div class="id-k">AGE</div><div class="id-v">17 yrs</div></div>
+        <div class="id-row"><div class="id-k">LOCATION</div><div class="id-v g">UNKNOWN 🌍</div></div>
+        <div class="id-row"><div class="id-k">FAITH</div><div class="id-v gr">ISLAM ☪</div></div>
+        <div class="id-row"><div class="id-k">ROLE</div><div class="id-v a">IT PROFESSIONAL</div></div>
+        <div class="id-row"><div class="id-k">ENTITY</div><div class="id-v g">Y — FOUNDER</div></div>
+        <div class="id-row"><div class="id-k">FUTURE</div><div class="id-v" style="font-size:.64rem;line-height:1.6">SG United Nations<br/>SG European Union<br/>Richest in the Universe</div></div>
+        <div class="id-row"><div class="id-k">MISSION</div><div class="id-v" style="font-size:.64rem;line-height:1.6">Tech · Transparency<br/>Human Rights · Interplanetary</div></div>
+        <div class="id-stamp">VERIFIED</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section id="about" style="background:var(--deep)" aria-labelledby="about-title">
+  <div class="page">
+    <div class="s-label">// 01 — ABOUT MNM YOUNUS</div>
+    <h2 class="s-title" id="about-title">WHO AM <span>I</span></h2>
+    <div class="divider"></div>
+    <div class="two-col reveal">
+      <div>
+        <p style="font-size:.97rem;line-height:1.88;color:var(--muted);margin-bottom:20px">
+          <strong style="color:var(--text)">@mnmyounus</strong> 🌟 is an extraordinary visionary — a rising global force whose aspirations stretch far beyond the confines of conventional success. At just <strong style="color:var(--accent)">17 years old</strong>, he stands as a pioneering mind with the bold determination to become not only the <strong style="color:var(--gold)">💰 richest individual in the universe</strong> but also a transformative global leader — holding future roles as Secretary-General of both the <strong style="color:var(--text)">🇺🇳 United Nations</strong> and the <strong style="color:var(--text)">🇪🇺 European Union</strong>.
+        </p>
+        <p style="font-size:.97rem;line-height:1.88;color:var(--muted);margin-bottom:20px">
+          His journey is rooted in a profound commitment to uniting <strong style="color:var(--text)">science, technology, governance, and ethics</strong> into a single force capable of elevating humanity. With a strong foundation in 🧠 neuroscience, 💻 information technology, 👨‍💼 software development, 🕊️ global diplomacy, 🛡️ military intelligence, ⚖️ international law, and 🎨 creative systems thinking — <strong style="color:var(--accent)">@mnmyounus is not merely building a career. He is architecting a new world order.</strong>
+        </p>
+        <p style="font-size:.97rem;line-height:1.88;color:var(--muted)">
+          Like <strong style="color:var(--text)">@$@&@&</strong>, his country is unknown — not from fear, but from principle. Privacy, security, and anonymity are not features. They are <strong style="color:var(--accent)">fundamental rights</strong>. He stands against the surveillance models of Google and Meta, and is building something the world has never seen before.
+        </p>
+      </div>
+      <div class="term">
+        <div class="term-bar">
+          <div class="td r"></div><div class="td y"></div><div class="td g"></div>
+          <span class="term-ttl">mnm_younus — identity.sh</span>
+        </div>
+        <div class="term-body" aria-label="Terminal showing MNM YOUNUS identity data">
+          <div class="tl"><span class="p">younus@unknown:~$ </span><span class="c">whoami</span></div>
+          <div class="tl"><span class="o">MNM_YOUNUS — The Visionary, Age 17</span></div>
+          <div class="tl">&nbsp;</div>
+          <div class="tl"><span class="p">younus@unknown:~$ </span><span class="c">cat mission.txt</span></div>
+          <div class="tl"><span class="o">Rebuild tech. Enforce transparency.</span></div>
+          <div class="tl"><span class="o">Protect human rights. Never compromise.</span></div>
+          <div class="tl"><span class="o">Govern ethically. Reach the stars.</span></div>
+          <div class="tl">&nbsp;</div>
+          <div class="tl"><span class="p">younus@unknown:~$ </span><span class="c">echo $LOCATION</span></div>
+          <div class="tl"><span class="o">UNKNOWN </span></div>
+          <div class="tl">&nbsp;</div>
+          <div class="tl"><span class="p">younus@unknown:~$ </span><span class="c">cat entity.txt</span></div>
+          <div class="tl"><span class="o">Y — Universal Ethical Mega-Corporation</span></div>
+          <div class="tl"><span class="o">YNation — Borderless Digital Civilization</span></div>
+          <div class="tl"><span class="o">YPlace — Interplanetary Settlement, Mars</span></div>
+          <div class="tl">&nbsp;</div>
+          <div class="tl"><span class="cm"># The Y movement is the next evolution.</span></div>
+          <div class="tl"><span class="p">younus@unknown:~$ </span><span class="tcur"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- full paragraph summary for SEO -->
+    <div class="reveal" style="margin-top:48px;padding:28px 32px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent)">
+      <p style="font-size:.92rem;line-height:1.9;color:var(--muted)">
+        At the core of the <strong style="color:var(--text)">🌟 Y movement</strong> is <strong style="color:var(--text)">@mnmyounus</strong> — a devout 🕌 Muslim, a scientist, a dreamer, and a servant of humanity. Guided by truth, compassion, and divine purpose, he is committed to awakening the global soul through leadership, technology, and vision. The Y movement is not just the future — it is the <strong style="color:var(--accent)">next evolution of human civilization</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     VISION / MANIFESTO
+══════════════════════════════════════ -->
+<section id="vision" aria-labelledby="vision-title">
+  <div class="page">
+    <div class="s-label">// 02 — VISION &amp; MANIFESTO</div>
+    <h2 class="s-title" id="vision-title">THE <span>MANIFESTO</span></h2>
+    <div class="divider"></div>
+    <div class="mf-grid reveal">
+      <div class="mf-block">
+        <div class="mf-num">01</div>
+        <h3>🏢 Conquer &amp; Ethically Reengineer the Giants</h3>
+        <p>Y will <strong>acquire and ethically reengineer</strong> 🔍 Google, 📘 Meta, 🍎 Apple, and 🐦 X (formerly Twitter) — merging them into the unified, transparent, AI-powered <strong>🧠 Y SuperSystem</strong>. This network will redefine the very nature of digital society, communication, commerce, and privacy for all of humanity.</p>
+      </div>
+      <div class="mf-block">
+        <div class="mf-num">02</div>
+        <h3>🔍 Radical Transparency Over Corporate Secrecy</h3>
+        <p>Every algorithm, every data decision, every policy must be <strong>readable by the people it affects</strong>. The era of hiding behind Terms of Service nobody reads ends with Y. Corporations must answer to citizens, not shareholders. Transparency is the new accountability.</p>
+      </div>
+      <div class="mf-block">
+        <div class="mf-num">03</div>
+        <h3>🌌 YNation — A Sovereign Borderless Civilization</h3>
+        <p>Y's mission transcends profit — it represents the birth of a <strong>sovereign digital civilization: 🌌 YNation</strong> or <strong>Yuniverse</strong>. With a global ID system, residency, legislative structure, and economic model, this borderless nation will integrate ethical leadership, intelligent systems, and spiritual values into a fully recognised planetary power.</p>
+      </div>
+      <div class="mf-block">
+        <div class="mf-num">04</div>
+        <h3>🚀 YPlace — Mars-Based Intelligent Settlement</h3>
+        <p>Looking beyond Earth, Y is pioneering <strong>🚀 YPlace</strong> — a Mars-based intelligent settlement designed for peaceful colonisation, interplanetary governance, and cosmic diplomacy. YPlace will extend YNation to the stars, rooted in peace, exploration, and universal harmony.</p>
+      </div>
+      <div class="mf-block">
+        <div class="mf-num">05</div>
+        <h3>⚖️ Human Rights as Non-Negotiable Infrastructure</h3>
+        <p>Every product, platform, and policy built with <strong>human rights as a non-negotiable foundation</strong> — not an afterthought. Permanently aligned with the UN, EU, ICC, Amnesty International, and UNICEF. Institutions such as 🎓 <strong>YAcademy</strong>, 🏫 <strong>YSchools</strong>, and 🏛️ <strong>YUniversities</strong> will deliver future-proof education built on diplomacy, science, and values.</p>
+      </div>
+      <div class="mf-block">
+        <div class="mf-num">06</div>
+        <h3>🌍 A Vision Bigger Than Any Billionaire</h3>
+        <p>Mars is impressive. But billions still suffer on Earth. The greatest vision isn't leaving the planet first — it's <strong>fixing the systems</strong> that make it unequal, unsafe, and surveilled. Civilisation first. Then the cosmos. This is a vision <strong>bigger than any single billionaire's dream</strong>.</p>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <div class="quote-t">"The most powerful thing a 17-year-old can have is not money — it's a vision that refuses to shrink."</div>
+      <div class="quote-a">— MNM YOUNUS &nbsp;·&nbsp; @mnmyounus</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     Y ECOSYSTEM
+══════════════════════════════════════ -->
+<section id="y-ecosystem" style="background:var(--deep)" aria-labelledby="y-title">
+  <div class="page">
+    <div class="s-label">// 03 — THE Y UNIVERSE</div>
+    <h2 class="s-title" id="y-title">THE <span>Y</span> ECOSYSTEM</h2>
+    <div class="divider"></div>
+    <p style="font-size:.94rem;line-height:1.85;color:var(--muted);max-width:760px;margin-bottom:36px" class="reveal">
+      🌐 <strong style="color:var(--text)">Y</strong> is not just a company — it is a <strong style="color:var(--text)">fully integrated ecosystem</strong> spanning digital innovation, physical infrastructure, financial technology, governance, education, and interstellar exploration. Every product, service, and solution in Y is created with the purpose of advancing civilization. These platforms are accessible through 🏬 <strong style="color:var(--text)">YShops</strong> and 🌐 <strong style="color:var(--text)">YHubs</strong> strategically located in every major city, ensuring universal access to innovation, knowledge, and opportunity.
+    </p>
+    <div class="y-grid reveal">
+      <div class="y-card">
+        <div class="y-icon">🚗</div>
+        <div class="y-name">YCar</div>
+        <div class="y-desc">Next-generation smart mobility and autonomous transportation infrastructure for a connected, equitable world</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🛍️</div>
+        <div class="y-name">YMall</div>
+        <div class="y-desc">AI-powered global commerce platform built on ethical supply chains, fair trade, and universal access</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">☕</div>
+        <div class="y-name">YCafe</div>
+        <div class="y-desc">Integrated lifestyle, hospitality, and knowledge-sharing spaces worldwide — innovation meets community</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🏦</div>
+        <div class="y-name">YBank</div>
+        <div class="y-desc">Global financial inclusion, digital currency, and decentralised ethical banking for every person on Earth</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🌐</div>
+        <div class="y-name">YNet</div>
+        <div class="y-desc">Planet-wide, high-security internet infrastructure — owned by people, not corporations or governments</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🧠</div>
+        <div class="y-name">Y SuperSystem</div>
+        <div class="y-desc">Unified AI ecosystem absorbing Google, Meta, Apple &amp; X into a transparent, rights-first digital network</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🎓</div>
+        <div class="y-name">YAcademy</div>
+        <div class="y-desc">Future-proof education combining diplomacy, science, ethics, and values — built for the next generation</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🏫</div>
+        <div class="y-name">YSchools &amp; YUniversities</div>
+        <div class="y-desc">Global institution network replacing outdated educational models with human-centred, values-driven learning</div>
+      </div>
+      <div class="y-card">
+        <div class="y-icon">🚀</div>
+        <div class="y-name">YPlace</div>
+        <div class="y-desc">Mars-based intelligent settlement — interplanetary governance, cosmic diplomacy, and peaceful colonisation</div>
+      </div>
+    </div>
+
+    <!-- Global Integrations -->
+    <div style="margin-top:52px" class="reveal">
+      <div class="s-label" style="margin-bottom:12px">// GLOBAL INSTITUTIONAL INTEGRATIONS</div>
+      <p style="font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-bottom:16px;line-height:1.8">
+        Y integrates deeply with the world's most powerful institutions to standardise ethics, cybersecurity, digital rights, and human development across the world — including dozens of global and regional bodies:
+      </p>
+      <div class="orgs" aria-label="Global organizations integrated with Y">
+        <div class="org">🇺🇳 United Nations</div>
+        <div class="org">🇪🇺 European Union</div>
+        <div class="org">🕊️ Interpol</div>
+        <div class="org">🛰️ NSA</div>
+        <div class="org">🏦 IMF</div>
+        <div class="org">🌍 World Bank</div>
+        <div class="org">⚖️ ICC</div>
+        <div class="org">🌍 African Union</div>
+        <div class="org">🌏 ASEAN</div>
+        <div class="org">🕌 OIC</div>
+        <div class="org">🇸🇦 GCC</div>
+        <div class="org">🌎 MERCOSUR</div>
+        <div class="org">🕊️ Amnesty International</div>
+        <div class="org">🌱 UNICEF</div>
+      </div>
+      <p style="font-family:var(--mono);font-size:.68rem;color:var(--muted);margin-top:14px">
+        🌐 <a href="#" style="color:var(--accent);text-decoration:none" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+          <strong>Explore the full list of global and regional organizations integrated in this vision →</strong>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CURRENT ROLES
+══════════════════════════════════════ -->
+<section id="roles" aria-labelledby="roles-title">
+  <div class="page">
+    <div class="s-label">// 04 — CURRENT POSITIONS</div>
+    <h2 class="s-title" id="roles-title">WHERE I <span>STAND TODAY</span></h2>
+    <div class="divider"></div>
+    <div class="timeline">
+      <div class="ti">
+        <div class="ti-dot"></div>
+        <div class="ti-org">Google Maps · Local Guides Program</div>
+        <div class="ti-role">Bronze Program Expert (PE) — Community Contributor</div>
+        <div class="ti-desc">Recognised Program Expert contributing verified local knowledge and expertise to Google Maps. Building accurate, trustworthy public information at street level for communities worldwide.</div>
+      </div>
+      <div class="ti">
+        <div class="ti-dot"></div>
+        <div class="ti-org">Amnesty International</div>
+        <div class="ti-role">Youth Member — Human Rights Advocate</div>
+        <div class="ti-desc">Active youth member championing human rights advocacy worldwide — speaking up for those whose voices are silenced by power, conflict, and oppression. Committed to justice and equality.</div>
+      </div>
+      <div class="ti">
+        <div class="ti-dot"></div>
+        <div class="ti-org">UNICEF</div>
+        <div class="ti-role">Certified Course Graduate</div>
+        <div class="ti-desc">Completed official UNICEF coursework on child rights, global development, and humanitarian principles — building a real-world foundation for impact-driven action across borders.</div>
+      </div>
+      <div class="ti">
+        <div class="ti-dot"></div>
+        <div class="ti-org">Independent · Self-Directed</div>
+        <div class="ti-role">IT Professional &amp; Developer</div>
+        <div class="ti-desc">Operating as a practising IT professional — building tools, platforms, and systems aligned with privacy, security, and digital sovereignty. See the full Skills section for the complete technical stack.</div>
+      </div>
+      <div class="ti">
+        <div class="ti-dot" style="border-color:var(--gold)"></div>
+        <div class="ti-org" style="color:var(--gold)">Faith · Identity · Foundation</div>
+        <div class="ti-role">A Proud Muslim ☪ — Servant of Humanity</div>
+        <div class="ti-desc">Faith is not a background detail — it is the foundation. Islam shapes ethics, discipline, and the commitment to justice. A devout Muslim, a scientist, a dreamer, and a servant of humanity. Proud to say it clearly in a world that often demands silence.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     VALUES
+══════════════════════════════════════ -->
+<section id="values" style="background:var(--deep)" aria-labelledby="values-title">
+  <div class="page">
+    <div class="s-label">// 05 — CORE VALUES</div>
+    <h2 class="s-title" id="values-title">WHAT I <span>BELIEVE</span></h2>
+    <div class="divider"></div>
+    <div class="val-grid reveal">
+      <div class="val-card">
+        <div class="val-icon">🔒</div>
+        <div class="val-ttl">Privacy</div>
+        <div class="val-txt">Not a feature. Not a setting. A fundamental human right — non-negotiable, always and everywhere.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🛡️</div>
+        <div class="val-ttl">Security</div>
+        <div class="val-txt">Systems that can be broken must be fixed. Security is infrastructure, not an afterthought or a product.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">👤</div>
+        <div class="val-ttl">Anonymity</div>
+        <div class="val-txt">The right to exist without being tracked, profiled, or sold to the highest bidder. Identity is yours alone.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🔍</div>
+        <div class="val-ttl">Transparency</div>
+        <div class="val-txt">If you hold power over others, you owe them complete clarity about how you use it. Always, without exception.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">⚖️</div>
+        <div class="val-ttl">Human Rights</div>
+        <div class="val-txt">Every decision — in technology, policy, or daily life — must answer to human dignity first. Not profit, not convenience.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🌐</div>
+        <div class="val-ttl">Open Internet</div>
+        <div class="val-txt">The web belongs to every human being. Not three companies, two governments, one algorithm, or any single authority.</div>
+      </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="disc reveal">
+      <p>
+        <strong>⚠️ Disclaimer:</strong> The information presented above reflects a personal vision and imaginative projection of my future goals and ambitions. While it is grounded in aspiration and long-term purpose, its realization may evolve or differ over time. This content is intended for conceptual and inspirational purposes only.
+      </p>
+      <p style="margin-top:10px">
+        🌐 <strong>Explore the full list of global and regional organizations integrated in this vision:</strong>
+        <a href="#" target="_blank"><strong>Click here</strong></a>
+      </p>
+    </div>
+
+    <div style="margin-top:44px;text-align:center" class="reveal">
+      <div style="font-family:var(--mono);font-size:.68rem;color:var(--muted);letter-spacing:.14em;margin-bottom:14px">WANT TO SEE THE TECHNICAL CAPABILITIES?</div>
+      <a href="https://mnmyounus.github.io/skills" class="btn" target="_blank">[ VIEW SKILLS SECTION ]</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="page">
+    <div class="foot-inner">
+      <div class="foot-logo">M<span style="color:var(--gold)">.</span>YOUNUS</div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <a href="https://mnmyounus.github.io/" style="font-family:var(--mono);font-size:.62rem;color:var(--muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Home</a>
+        <a href="https://mnmyounus.github.io/skills" style="font-family:var(--mono);font-size:.62rem;color:var(--muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Skills</a>
+        <a href="https://mnmyounus.github.io/#contact" style="font-family:var(--mono);font-size:.62rem;color:var(--muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Contact</a>
+        <a href="https://y-universe-place.github.io/YUNIVERSE" target="_blank" style="font-family:var(--mono);font-size:.62rem;color:var(--muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Y Universe</a>
+      </div>
+      <div class="foot-note">© 2026 Y. All rights reserved. &nbsp;·&nbsp; Location: <span>UNKNOWN</span> &nbsp;·&nbsp; Built without compromise.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* TYPED HERO TAG */
+  const tag = document.getElementById('htag');
+  const msg = '[ ABOUT MNM YOUNUS — IDENTITY LOADED ]';
+  let ti = 0;
+  function type(){if(ti<msg.length){tag.textContent+=msg[ti++];setTimeout(type,48)}}
+  setTimeout(type,500);
+
+  /* SCROLL REVEAL + TIMELINE */
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}
+    });
+  },{threshold:.08});
+  document.querySelectorAll('.reveal,.ti').forEach(el=>io.observe(el));
+
+  /* ACTIVE NAV */
+  const secs = document.querySelectorAll('section[id]');
+  const navAs = document.querySelectorAll('.float-nav a');
+  window.addEventListener('scroll',()=>{
+    let cur='';
+    secs.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id});
+    navAs.forEach(a=>{
+      a.classList.remove('active');
+      if(a.getAttribute('href')==='#'+cur)a.classList.add('active');
+    });
+  },{passive:true});
+</script>
+</body>
+</html>
