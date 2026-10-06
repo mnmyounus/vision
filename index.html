@@ -4,25 +4,23 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About MNM YOUNUS — Visionary, Founder of Y, IT Professional | mnmyounus</title>
-  <meta name="description" content="MNM YOUNUS (@mnmyounus) — 17-year-old visionary, founder of Y mega-corporation, IT professional, Muslim, future UN & EU Secretary-General. Learn about the Y ecosystem, YNation, YPlace Mars, and the vision to reshape human civilization."/>
-  <meta name="keywords" content="MNM YOUNUS, mnmyounus, Y corporation, YNation, YPlace, visionary, IT professional, human rights, privacy, Muslim, Y ecosystem, YCar, YBank, YNet, YMall, Y SuperSystem, Google, Meta, Apple, transparency, UN, EU"/>
+  <meta name="description" content="MNM YOUNUS (@mnmyounus) — visionary, founder of Y mega-corporation, IT professional, future UN & EU Secretary-General. Learn about the Y ecosystem, YNation, YPlace Mars, and the vision to reshape human civilization."/>
+  <meta name="keywords" content="MNM YOUNUS, mnmyounus, Y corporation, YNation, YPlace, visionary, IT professional, human rights, privacy, Y ecosystem, YCar, YBank, YNet, YMall, Y SuperSystem, Google, Meta, Apple, transparency, UN, EU"/>
   <meta name="author" content="MNM YOUNUS"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://mnmyounus.github.io/vision"/>
+  <link rel="canonical" href="https://mnmyounus.github.io/about.html"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile"/>
   <meta property="og:title" content="MNM YOUNUS — Visionary, Founder of Y"/>
-  <meta property="og:description" content="17-year-old visionary architecting a new world order through the Y ecosystem, YNation, and interplanetary settlement YPlace on Mars."/>
-  <meta property="og:url" content="https://mnmyounus.github.io/vision"/>
-  <meta property="og:image" content="https://mnmyounus.github.io/hidden.jpg"/>
+  <meta property="og:description" content="Visionary architecting a new world order through the Y ecosystem, YNation, and interplanetary settlement YPlace on Mars."/>
+  <meta property="og:url" content="https://mnmyounus.github.io/about.html"/>
   <meta property="og:site_name" content="MNM YOUNUS Portfolio"/>
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:card" content="summary"/>
   <meta name="twitter:title" content="MNM YOUNUS — Visionary, Founder of Y"/>
-  <meta name="twitter:description" content="17-year-old visionary, IT professional, Muslim, founder of Y mega-corporation. Future UN & EU Sec-Gen."/>
-  <meta name="twitter:image" content="https://mnmyounus.github.io/hidden.jpg"/>
+  <meta name="twitter:description" content="Visionary, IT professional, founder of Y mega-corporation. Future UN & EU Sec-Gen."/>
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -31,9 +29,8 @@
     "@type": "Person",
     "name": "MNM YOUNUS",
     "alternateName": "@mnmyounus",
-    "description": "17-year-old visionary, founder of Y mega-corporation, IT professional, Muslim, human rights advocate",
-    "url": "https://mnmyounus.github.io/vision",
-    "image": "https://mnmyounus.github.io/hidden.jpg",
+    "description": "Visionary, founder of Y mega-corporation, IT professional, human rights advocate",
+    "url": "https://mnmyounus.github.io/about.html",
     "jobTitle": "IT Professional, Developer, Founder of Y",
     "knowsAbout": ["Neuroscience","Information Technology","Software Development","Global Diplomacy","Military Intelligence","International Law","Privacy","Cybersecurity","Human Rights","Artificial Intelligence"],
     "memberOf": [
@@ -108,6 +105,46 @@
       .float-nav .nav-sep{display:none}
       .float-nav a,.float-nav button{font-size:.58rem;padding:5px 8px}
     }
+
+    /* Y BALL NAV */
+    .float-nav{--ease:cubic-bezier(.2,.8,.2,1);--ballbg:radial-gradient(circle at 32% 28%,#8ff0ff,var(--accent) 55%,#0086a8);padding:6px;gap:0}
+    .float-nav .float-ball{flex:0 0 auto;width:46px;height:46px;padding:0;border-radius:50%;border:0;cursor:pointer;color:var(--black);
+      font-family:var(--display);font-size:1.7rem;letter-spacing:0;line-height:1;display:grid;place-items:center;
+      background:var(--ballbg);box-shadow:0 4px 18px rgba(0,212,255,.45),inset 0 -3px 8px rgba(0,0,0,.25);transition:transform .2s}
+    .float-nav .float-ball:hover{background:var(--ballbg);color:var(--black);transform:scale(1.08)}
+    .float-nav .float-ball:focus-visible{outline:2px solid #fff;outline-offset:3px}
+    .float-nav:not(.open) .float-ball{animation:ballglow 2.6s ease-in-out infinite}
+    .float-nav:not(.open) .float-ball.shake{animation:shake .45s ease-in-out}
+    @keyframes ballglow{0%,100%{box-shadow:0 4px 18px rgba(0,212,255,.4),inset 0 -3px 8px rgba(0,0,0,.25)}50%{box-shadow:0 4px 30px rgba(0,212,255,.85),inset 0 -3px 8px rgba(0,0,0,.25)}}
+    @keyframes shake{0%,100%{transform:translate(0) rotate(0) scale(1)}15%{transform:translate(-5px,0) rotate(-16deg) scale(1.08)}30%{transform:translate(5px,0) rotate(14deg) scale(1.12)}45%{transform:translate(-4px,0) rotate(-12deg) scale(1.16)}60%{transform:translate(4px,0) rotate(10deg) scale(1.2)}80%{transform:translate(-2px,0) rotate(-5deg) scale(1.24)}}
+    .float-links{display:flex;align-items:center;max-width:0;opacity:0;overflow:hidden;white-space:nowrap;visibility:hidden;pointer-events:none;
+      transition:max-width .5s var(--ease),max-height .5s var(--ease),opacity .3s,padding .3s,visibility 0s .5s}
+    .float-nav.open .float-links{max-width:900px;opacity:1;padding:0 8px 0 6px;visibility:visible;pointer-events:auto;
+      transition:max-width .5s var(--ease),max-height .5s var(--ease),opacity .3s,padding .3s,visibility 0s}
+    .blast{position:fixed;width:0;height:0;z-index:950;pointer-events:none}
+    .blast-ring{position:absolute;left:-30px;top:-30px;width:60px;height:60px;border-radius:50%;border:2px solid var(--accent);
+      background:radial-gradient(circle,rgba(0,212,255,.5),rgba(201,162,39,.15) 55%,transparent 70%);animation:ring .6s ease-out forwards}
+    .blast-p{position:absolute;left:-3px;top:-3px;width:6px;height:6px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c);animation:fly .65s cubic-bezier(.1,.7,.3,1) forwards}
+    @keyframes ring{from{transform:scale(.4);opacity:1}to{transform:scale(5);opacity:0}}
+    @keyframes fly{from{transform:translate(0,0) scale(1);opacity:1}to{transform:translate(var(--dx),var(--dy)) scale(0);opacity:0}}
+    @media(min-width:701px) and (max-width:900px){.float-nav.open .float-links{max-width:calc(100vw - 100px);overflow-x:auto;scrollbar-width:none}}
+    @media(max-width:700px){
+      .float-nav{left:16px;right:auto;border-radius:29px;flex-direction:column-reverse;align-items:flex-start;gap:0;padding:6px}
+      .float-links{flex-direction:column;align-items:stretch;max-height:0}
+      .float-nav.open .float-links{max-width:200px;max-height:420px;padding:6px 4px 8px}
+    }
+    @media(prefers-reduced-motion:reduce){.float-ball,.float-links{animation:none!important;transition:none!important}.blast{display:none}}
+
+    /* Y BALL: draggable */
+    .float-nav{z-index:10000}
+    .float-nav .float-ball{touch-action:none;-webkit-user-select:none;user-select:none;cursor:grab}
+    .float-nav.dragging{transition:none;box-shadow:0 14px 48px rgba(0,0,0,.6),0 0 0 1px rgba(0,212,255,.25)}
+    .float-nav.dragging .float-ball{cursor:grabbing;animation:none!important;transform:scale(1.12)}
+    .float-nav.no-anim .float-links{transition:none!important}
+    .float-links::-webkit-scrollbar{display:none}
+    .float-nav.open .float-links{max-width:min(900px,var(--avail,900px));overflow-x:auto;scrollbar-width:none}
+    @media(min-width:701px) and (max-width:900px){.float-nav.open .float-links{max-width:min(calc(100vw - 100px),var(--avail,9999px))}}
+    @media(max-width:700px){.float-nav.open .float-links{max-width:200px;max-height:min(420px,var(--availh,420px));overflow-x:hidden;overflow-y:auto}}
 
     .page{position:relative;z-index:10;max-width:1100px;margin:0 auto;padding:0 28px}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
@@ -263,142 +300,190 @@
   </style>
 </head>
 <body>
- <!-- Welcome Entrance — ribbon + earth-emoji fall -->
-<canvas id="welcomeCanvas" style="position:fixed;inset:0;z-index:9998;pointer-events:none;"></canvas>
-<div id="welcomeMessage" style="position:fixed;top:38%;left:50%;transform:translate(-50%,-50%) scale(0.9);opacity:0;z-index:9999;pointer-events:none;text-align:center;font-family:'Inter',-apple-system,sans-serif;transition:opacity .6s ease, transform .6s ease;">
-  <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4FD1C5;margin-bottom:10px;">Welcome</div>
-  <div style="font-size:clamp(1.4rem,4vw,2.2rem);font-weight:800;color:#fff;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(0,0,0,.5);">MNM Younus</div>
-</div>
-<style>
-  @media (prefers-reduced-motion: reduce){
-    #welcomeCanvas, #welcomeMessage{ display:none !important; }
-  }
-</style>
-<script>
-(function(){
-  "use strict";
-  const canvas = document.getElementById('welcomeCanvas');
-  const msg = document.getElementById('welcomeMessage');
-  const ctx = canvas.getContext('2d');
-  let pieces = [];
-  let running = false;
+ <!-- Welcome Entrance — ribbon/confetti canvas -->
+  <canvas id="welcomeCanvas" style="position:fixed;inset:0;z-index:9998;pointer-events:none;"></canvas>
+  <div id="welcomeMessage" style="position:fixed;top:38%;left:50%;transform:translate(-50%,-50%) scale(0.9);opacity:0;z-index:9999;pointer-events:none;text-align:center;font-family:'Inter',-apple-system,sans-serif;transition:opacity .6s ease, transform .6s ease;">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4FD1C5;margin-bottom:10px;">Welcome</div>
+    <div style="font-size:clamp(1.4rem,4vw,2.2rem);font-weight:800;color:#fff;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(0,0,0,.5);">MNM Younus</div>
+  </div>
 
-  function resize(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  window.addEventListener('resize', resize);
-
-  const RIBBON_COLORS = ['#4FD1C5', '#5AC8FA', '#8BD17C', '#B892FF', '#FFFFFF'];
-
-  function makePiece(){
-    const isEmoji = Math.random() < 0.25;
-    return {
-      x: Math.random() * canvas.width,
-      y: -20 - Math.random() * 300,
-      w: isEmoji ? 20 + Math.random() * 10 : 6 + Math.random() * 4,
-      h: isEmoji ? 20 + Math.random() * 10 : 16 + Math.random() * 14,
-      color: RIBBON_COLORS[Math.floor(Math.random() * RIBBON_COLORS.length)],
-      rot: Math.random() * Math.PI * 2,
-      rotSpeed: (Math.random() - 0.5) * 0.1,
-      vy: isEmoji ? 1.6 + Math.random() * 1.6 : 2.2 + Math.random() * 2.6,
-      vx: (Math.random() - 0.5) * 2,
-      sway: Math.random() * Math.PI * 2,
-      swaySpeed: 0.02 + Math.random() * 0.02,
-      isEmoji: isEmoji
-    };
-  }
-
-  function launch(){
-    resize();
-    pieces = [];
-    const count = Math.min(120, Math.floor(window.innerWidth / 9));
-    for(let i = 0; i < count; i++) pieces.push(makePiece());
-
-    msg.style.opacity = '1';
-    msg.style.transform = 'translate(-50%,-50%) scale(1)';
-
-    running = true;
-    let elapsed = 0;
-    const fadeStart = 2200;
-    const totalLife = 3400;
-    let lastTime = performance.now();
-
-    function tick(now){
-      const dt = Math.min(now - lastTime, 40);
-      lastTime = now;
-      elapsed += dt;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      let fade = 1;
-      if(elapsed > fadeStart) fade = Math.max(0, 1 - (elapsed - fadeStart) / (totalLife - fadeStart));
-
-      pieces.forEach(function(p){
-        p.sway += p.swaySpeed;
-        p.x += p.vx + Math.sin(p.sway) * 0.6;
-        p.y += p.vy;
-        p.rot += p.rotSpeed;
-
-        ctx.save();
-        ctx.globalAlpha = fade;
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.rot);
-        if(p.isEmoji){
-          ctx.font = p.w + 'px sans-serif';
-          ctx.textAlign = 'center';
-          ctx.textBaseline = 'middle';
-          ctx.fillText('🌍', 0, 0);
-        } else {
-          ctx.fillStyle = p.color;
-          ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
-        }
-        ctx.restore();
-      });
-
-      if(elapsed < totalLife){
-        requestAnimationFrame(tick);
-      } else {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        msg.style.opacity = '0';
-        msg.style.transform = 'translate(-50%,-50%) scale(0.9)';
-        running = false;
-      }
+  <style>
+    @media (prefers-reduced-motion: reduce){
+      #welcomeCanvas, #welcomeMessage{ display:none !important; }
     }
-    requestAnimationFrame(tick);
-  }
+  </style>
 
-  window.__playWelcomeEntrance = function(){ if(!running) launch(); };
-})();
-</script>
+  <script>
+  (function(){
+    "use strict";
+    const canvas = document.getElementById('welcomeCanvas');
+    const msg = document.getElementById('welcomeMessage');
+    const ctx = canvas.getContext('2d');
+    let pieces = [];
+    let animId = null;
+    let running = false;
 
-<!-- Hidden Audio Player Engine -->
-<audio id="bgMusicPlayer" src="YPlace_Mars.mp3" loop preload="auto"></audio>
+    function resize(){
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
 
-<!-- Mute Button Controller -->
-<div style="position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.85); padding: 8px; border-radius: 50%; z-index: 9999; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display:flex; align-items:center;">
-  <button id="bgMusicMuteBtn" aria-label="Mute music" style="background:rgba(255,255,255,0.15); border:none; color:#fff; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center;">🔊</button>
-</div>
-<script>
-  let isMuted = false;
-  const player = document.getElementById('bgMusicPlayer');
-  const muteBtn = document.getElementById('bgMusicMuteBtn');
-  document.addEventListener('click', function unlockPage() {
-    player.play().catch(err => console.log("Autoplay blocked until interaction."));
-    if (typeof window.__playWelcomeEntrance === 'function') window.__playWelcomeEntrance();
-  }, { once: true });
-  muteBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    isMuted = !isMuted;
-    player.muted = isMuted;
-    muteBtn.textContent = isMuted ? "🔇" : "🔊";
-  });
-</script>
+    const COLORS = ['#4FD1C5', '#5AC8FA', '#8BD17C', '#B892FF', '#FFFFFF', '#5EEAD4'];
+
+    function makePiece(){
+      const isRibbon = Math.random() < 0.35;
+      return {
+        x: Math.random() * canvas.width,
+        y: -20 - Math.random() * canvas.height * 0.4,
+        w: isRibbon ? 6 + Math.random() * 4 : 7 + Math.random() * 5,
+        h: isRibbon ? 16 + Math.random() * 14 : 7 + Math.random() * 5,
+        color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        rot: Math.random() * Math.PI * 2,
+        rotSpeed: (Math.random() - 0.5) * 0.12,
+        vy: 2.2 + Math.random() * 2.6,
+        vx: (Math.random() - 0.5) * 2.2,
+        sway: Math.random() * Math.PI * 2,
+        swaySpeed: 0.02 + Math.random() * 0.02,
+        opacity: 1,
+        isRibbon: isRibbon
+      };
+    }
+
+    function launch(){
+      resize();
+      pieces = [];
+      const count = Math.min(140, Math.floor(window.innerWidth / 8));
+      for(let i = 0; i < count; i++){
+        const p = makePiece();
+        p.y = -20 - Math.random() * 300;
+        pieces.push(p);
+      }
+
+      msg.style.opacity = '1';
+      msg.style.transform = 'translate(-50%,-50%) scale(1)';
+
+      running = true;
+      let elapsed = 0;
+      const fadeStart = 2200;
+      const totalLife = 3400;
+
+      let lastTime = performance.now();
+      function tick(now){
+        const dt = Math.min(now - lastTime, 40);
+        lastTime = now;
+        elapsed += dt;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        let globalFade = 1;
+        if(elapsed > fadeStart){
+          globalFade = Math.max(0, 1 - (elapsed - fadeStart) / (totalLife - fadeStart));
+        }
+
+        pieces.forEach(function(p){
+          p.sway += p.swaySpeed;
+          p.x += p.vx + Math.sin(p.sway) * 0.6;
+          p.y += p.vy;
+          p.rot += p.rotSpeed;
+
+          ctx.save();
+          ctx.globalAlpha = globalFade;
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot);
+          ctx.fillStyle = p.color;
+          if(p.isRibbon){
+            ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+          } else {
+            ctx.beginPath();
+            ctx.ellipse(0, 0, p.w/2, p.h/2, 0, 0, Math.PI*2);
+            ctx.fill();
+          }
+          ctx.restore();
+        });
+
+        if(elapsed < totalLife){
+          animId = requestAnimationFrame(tick);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          msg.style.opacity = '0';
+          msg.style.transform = 'translate(-50%,-50%) scale(0.9)';
+          running = false;
+        }
+      }
+      animId = requestAnimationFrame(tick);
+    }
+
+    window.__playWelcomeEntrance = function(){
+      if(!running) launch();
+    };
+  })();
+  </script>
+
+  <!-- Hidden Audio Player Engine -->
+  <audio id="bgMusicPlayer" preload="auto"></audio>
+
+  <!-- Mute Button Controller -->
+  <div style="position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.85); padding: 8px; border-radius: 50%; z-index: 9999; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display:flex; align-items:center;">
+    <button id="bgMusicMuteBtn" aria-label="Mute music" style="background:rgba(255,255,255,0.15); border:none; color:#fff; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center;">🔊</button>
+  </div>
+
+  <script>
+    const playlistFiles = [
+      { title: "Song 1", file: "YPlace_Mars.mp3" },
+      { title: "Song 2", file: "YPlace_Mars.mp3" },
+      { title: "Song 3", file: "YPlace_Mars.mp3" }
+    ];
+    let playedCount = 0;
+    let isMuted = false;
+    const player = document.getElementById('bgMusicPlayer');
+    const muteBtn = document.getElementById('bgMusicMuteBtn');
+
+    function loadAndPlayTrack(index) {
+      player.src = playlistFiles[index].file;
+      player.play().catch(err => {
+        console.log("Autoplay blocked until user interacts with page.");
+      });
+    }
+
+    function getNextTrackIndex() {
+      playedCount++;
+      if (playedCount < 3) {
+        return playedCount;
+      }
+      return Math.floor(Math.random() * playlistFiles.length);
+    }
+
+    player.onended = function() {
+      const nextIndex = getNextTrackIndex();
+      loadAndPlayTrack(nextIndex);
+    };
+
+    // First interaction unlocks audio AND launches welcome animation
+    document.addEventListener('click', function unlockPage() {
+      if (!player.src) {
+        loadAndPlayTrack(0);
+      }
+      if (typeof window.__playWelcomeEntrance === 'function') {
+        window.__playWelcomeEntrance();
+      }
+    }, { once: true });
+
+    muteBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      isMuted = !isMuted;
+      player.muted = isMuted;
+      muteBtn.textContent = isMuted ? "🔇" : "🔊";
+      muteBtn.setAttribute("aria-label", isMuted ? "Unmute music" : "Mute music");
+    });
+  </script>
 <div class="bg-grid"></div>
 <div class="bg-glow"></div>
 
 <!-- ── FLOATING BALL NAV ── -->
-<nav class="float-nav" aria-label="Site navigation">
-  <span class="nav-logo-pill">M<span>.</span>YOUNUS</span>
+<nav class="float-nav" id="ynav" aria-label="Site navigation">
+  <button class="float-ball" id="yball" type="button" aria-expanded="false" aria-controls="float-links" aria-label="Open menu">Y</button>
+  <div class="float-links" id="float-links">
   <a href="https://mnmyounus.github.io/" title="Home">Home</a>
   <div class="nav-sep"></div>
   <a href="#about" title="About MNM YOUNUS">About</a>
@@ -414,6 +499,7 @@
   <a href="https://mnmyounus.github.io/skills" title="Skills">Skills</a>
   <div class="nav-sep"></div>
   <a href="https://mnmyounus.github.io/#contact" title="Contact">Contact</a>
+</div>
 </nav>
 
 <!-- ══════════════════════════════════════
@@ -433,7 +519,7 @@
           💸 Future Richest Person in the Universe<br/>
           🌍 UN &amp; 🇪🇺 EU Sec-Gen &nbsp;·&nbsp; 💻 IT Professional<br/>
           🧠 Intelligent &nbsp;·&nbsp; 🪖 Military Strategist &nbsp;·&nbsp; ⚖️ Judicial Mind<br/>
-          👨‍💻 Developer &nbsp;·&nbsp; 🎨 Creative Thinker &nbsp;·&nbsp; ☪️ Muslim &nbsp;·&nbsp; Age 17
+          👨‍💻 Developer &nbsp;·&nbsp; 🎨 Creative Thinker
         </div>
         <p class="hero-desc">
           Founder of <strong>Y</strong> — the most ethical mega-corporation in human history.
@@ -441,7 +527,6 @@
           <strong>human rights</strong>. Location: <strong>UNKNOWN</strong>.
         </p>
         <div class="badges" aria-label="Key identity tags">
-          <span class="badge bg3">☪ Muslim</span>
           <span class="badge ba">🔒 Privacy</span>
           <span class="badge bg2">⚖ Human Rights</span>
           <span class="badge br">⚡ Visionary</span>
@@ -459,9 +544,7 @@
       <div class="id-card reveal">
         <div class="id-hdr"><span>CLEARANCE: OPEN</span><em>● LIVE</em></div>
         <div class="id-row"><div class="id-k">HANDLE</div><div class="id-v a">@mnmyounus</div></div>
-        <div class="id-row"><div class="id-k">AGE</div><div class="id-v">17 yrs</div></div>
         <div class="id-row"><div class="id-k">LOCATION</div><div class="id-v g">UNKNOWN 🌍</div></div>
-        <div class="id-row"><div class="id-k">FAITH</div><div class="id-v gr">ISLAM ☪</div></div>
         <div class="id-row"><div class="id-k">ROLE</div><div class="id-v a">IT PROFESSIONAL</div></div>
         <div class="id-row"><div class="id-k">ENTITY</div><div class="id-v g">Y — FOUNDER</div></div>
         <div class="id-row"><div class="id-k">FUTURE</div><div class="id-v" style="font-size:.64rem;line-height:1.6">SG United Nations<br/>SG European Union<br/>Richest in the Universe</div></div>
@@ -483,7 +566,7 @@
     <div class="two-col reveal">
       <div>
         <p style="font-size:.97rem;line-height:1.88;color:var(--muted);margin-bottom:20px">
-          <strong style="color:var(--text)">@mnmyounus</strong> 🌟 is an extraordinary visionary — a rising global force whose aspirations stretch far beyond the confines of conventional success. At just <strong style="color:var(--accent)">17 years old</strong>, he stands as a pioneering mind with the bold determination to become not only the <strong style="color:var(--gold)">💰 richest individual in the universe</strong> but also a transformative global leader — holding future roles as Secretary-General of both the <strong style="color:var(--text)">🇺🇳 United Nations</strong> and the <strong style="color:var(--text)">🇪🇺 European Union</strong>.
+          <strong style="color:var(--text)">@mnmyounus</strong> 🌟 is an extraordinary visionary — a rising global force whose aspirations stretch far beyond the confines of conventional success. Still early in his journey, he stands as a pioneering mind with the bold determination to become not only the <strong style="color:var(--gold)">💰 richest individual in the universe</strong> but also a transformative global leader — holding future roles as Secretary-General of both the <strong style="color:var(--text)">🇺🇳 United Nations</strong> and the <strong style="color:var(--text)">🇪🇺 European Union</strong>.
         </p>
         <p style="font-size:.97rem;line-height:1.88;color:var(--muted);margin-bottom:20px">
           His journey is rooted in a profound commitment to uniting <strong style="color:var(--text)">science, technology, governance, and ethics</strong> into a single force capable of elevating humanity. With a strong foundation in 🧠 neuroscience, 💻 information technology, 👨‍💼 software development, 🕊️ global diplomacy, 🛡️ military intelligence, ⚖️ international law, and 🎨 creative systems thinking — <strong style="color:var(--accent)">@mnmyounus is not merely building a career. He is architecting a new world order.</strong>
@@ -499,7 +582,7 @@
         </div>
         <div class="term-body" aria-label="Terminal showing MNM YOUNUS identity data">
           <div class="tl"><span class="p">younus@unknown:~$ </span><span class="c">whoami</span></div>
-          <div class="tl"><span class="o">MNM_YOUNUS — The Visionary, Age 17</span></div>
+          <div class="tl"><span class="o">MNM_YOUNUS — The Visionary</span></div>
           <div class="tl">&nbsp;</div>
           <div class="tl"><span class="p">younus@unknown:~$ </span><span class="c">cat mission.txt</span></div>
           <div class="tl"><span class="o">Rebuild tech. Enforce transparency.</span></div>
@@ -523,7 +606,7 @@
     <!-- full paragraph summary for SEO -->
     <div class="reveal" style="margin-top:48px;padding:28px 32px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent)">
       <p style="font-size:.92rem;line-height:1.9;color:var(--muted)">
-        At the core of the <strong style="color:var(--text)">🌟 Y movement</strong> is <strong style="color:var(--text)">@mnmyounus</strong> — a devout 🕌 Muslim, a scientist, a dreamer, and a servant of humanity. Guided by truth, compassion, and divine purpose, he is committed to awakening the global soul through leadership, technology, and vision. The Y movement is not just the future — it is the <strong style="color:var(--accent)">next evolution of human civilization</strong>.
+        At the core of the <strong style="color:var(--text)">🌟 Y movement</strong> is <strong style="color:var(--text)">@mnmyounus</strong> — a scientist, a dreamer, and a servant of humanity. Guided by truth, compassion, and purpose, he is committed to awakening the global soul through leadership, technology, and vision. The Y movement is not just the future — it is the <strong style="color:var(--accent)">next evolution of human civilization</strong>.
       </p>
     </div>
   </div>
@@ -571,7 +654,7 @@
     </div>
 
     <div class="quote reveal">
-      <div class="quote-t">"The most powerful thing a 17-year-old can have is not money — it's a vision that refuses to shrink."</div>
+      <div class="quote-t">"The most powerful thing a young person can have is not money — it's a vision that refuses to shrink."</div>
       <div class="quote-a">— MNM YOUNUS &nbsp;·&nbsp; @mnmyounus</div>
     </div>
   </div>
@@ -700,13 +783,7 @@
         <div class="ti-role">IT Professional &amp; Developer</div>
         <div class="ti-desc">Operating as a practising IT professional — building tools, platforms, and systems aligned with privacy, security, and digital sovereignty. See the full Skills section for the complete technical stack.</div>
       </div>
-      <div class="ti">
-        <div class="ti-dot" style="border-color:var(--gold)"></div>
-        <div class="ti-org" style="color:var(--gold)">Faith · Identity · Foundation</div>
-        <div class="ti-role">A Proud Muslim ☪ — Servant of Humanity</div>
-        <div class="ti-desc">Faith is not a background detail — it is the foundation. Islam shapes ethics, discipline, and the commitment to justice. A devout Muslim, a scientist, a dreamer, and a servant of humanity. Proud to say it clearly in a world that often demands silence.</div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -800,6 +877,80 @@
     });
   },{threshold:.08});
   document.querySelectorAll('.reveal,.ti').forEach(el=>io.observe(el));
+
+  /* Y BALL: shake, blast, open, drag */
+  (function(){
+    const nav=document.getElementById('ynav'),ball=document.getElementById('yball');
+    const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const mq=matchMedia('(max-width:700px)'),de=document.documentElement,PAD=7,SZ=46;
+    let busy=false,down=false,drag=false,suppress=false,sx=0,sy=0,bx=0,by=0;
+    const clamp=(v,lo,hi)=>Math.max(lo,Math.min(hi,v));
+    const cx=x=>clamp(x,PAD+4,de.clientWidth-SZ-PAD-4),cy=y=>clamp(y,PAD+4,de.clientHeight-SZ-PAD-4);
+    function ballPos(){const r=nav.getBoundingClientRect();return{x:r.left+nav.clientLeft+ball.offsetLeft,y:r.top+nav.clientTop+ball.offsetTop}}
+    function place(x,y){
+      const s=nav.style;
+      s.left=(x-PAD)+'px';s.top=(y-PAD)+'px';s.right='auto';s.bottom='auto';s.transform='none';
+      s.flexDirection='';s.alignItems='';s.removeProperty('--avail');s.removeProperty('--availh');
+      nav.dataset.moved='1';
+    }
+    function save(){try{const p=ballPos();localStorage.setItem('yball',JSON.stringify({x:p.x/de.clientWidth,y:p.y/de.clientHeight}))}catch(e){}}
+    function restore(){try{const p=JSON.parse(localStorage.getItem('yball')||'null');if(p&&isFinite(p.x)&&isFinite(p.y))place(cx(p.x*de.clientWidth),cy(p.y*de.clientHeight))}catch(e){}}
+    function layoutOpen(){
+      if(nav.dataset.moved!=='1')return;
+      const p=ballPos(),W=de.clientWidth,H=de.clientHeight,s=nav.style,m=mq.matches;
+      const fx=p.x+SZ/2>W/2,fy=m&&p.y+SZ/2<H/2,up=m&&!fy;
+      s.left=fx?'auto':(p.x-PAD)+'px';s.right=fx?(W-p.x-SZ-PAD)+'px':'auto';
+      s.top=up?'auto':(p.y-PAD)+'px';s.bottom=up?(H-p.y-SZ-PAD)+'px':'auto';
+      if(m){s.flexDirection=fy?'column':'';s.alignItems=fx?'flex-end':'flex-start';s.setProperty('--availh',(fy?H-p.y-SZ-PAD-12:p.y-PAD-12)+'px')}
+      else{s.flexDirection=fx?'row-reverse':'';s.alignItems='';s.setProperty('--avail',((fx?p.x-PAD:W-p.x-SZ-PAD)-24)+'px')}
+    }
+    function setOpen(o){nav.classList.toggle('open',o);ball.setAttribute('aria-expanded',o);ball.setAttribute('aria-label',o?'Close menu':'Open menu')}
+    function blast(){
+      const r=ball.getBoundingClientRect(),b=document.createElement('div');
+      b.className='blast';b.style.left=(r.left+r.width/2)+'px';b.style.top=(r.top+r.height/2)+'px';
+      b.innerHTML='<span class="blast-ring"></span>';
+      const cols=['#00d4ff','#c9a227','#00ff88','#ff3b3b','#ffffff'];
+      for(let i=0;i<16;i++){
+        const a=i/16*Math.PI*2+Math.random()*.4,d=60+Math.random()*60,q=document.createElement('span');
+        q.className='blast-p';
+        q.style.cssText=`--dx:${Math.cos(a)*d}px;--dy:${Math.sin(a)*d}px;--c:${cols[i%5]}`;
+        b.appendChild(q);
+      }
+      document.body.appendChild(b);setTimeout(()=>b.remove(),800);
+    }
+    ball.addEventListener('pointerdown',e=>{
+      if(e.button||busy||nav.classList.contains('open'))return;
+      down=true;drag=false;sx=e.clientX;sy=e.clientY;
+      try{ball.setPointerCapture(e.pointerId)}catch(_){}
+    });
+    ball.addEventListener('pointermove',e=>{
+      if(!down)return;
+      const dx=e.clientX-sx,dy=e.clientY-sy;
+      if(!drag){
+        if(Math.hypot(dx,dy)<6)return;
+        drag=true;nav.classList.add('dragging','no-anim');
+        const p=ballPos();bx=p.x;by=p.y;place(bx,by);
+      }
+      place(cx(bx+dx),cy(by+dy));
+    });
+    function end(){
+      if(!down)return;down=false;nav.classList.remove('no-anim');
+      if(drag){nav.classList.remove('dragging');suppress=true;setTimeout(()=>suppress=false,60);save()}
+    }
+    ball.addEventListener('pointerup',end);ball.addEventListener('pointercancel',end);
+    ball.addEventListener('click',()=>{
+      if(suppress||busy)return;
+      if(nav.classList.contains('open')){setOpen(false);return}
+      if(calm){layoutOpen();setOpen(true);return}
+      busy=true;ball.classList.add('shake');
+      setTimeout(()=>{ball.classList.remove('shake');blast();layoutOpen();setOpen(true);busy=false},450);
+    });
+    document.addEventListener('click',e=>{if(!nav.contains(e.target)&&nav.classList.contains('open'))setOpen(false)});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){setOpen(false);ball.focus()}});
+    nav.querySelectorAll('.float-links a').forEach(a=>a.addEventListener('click',()=>setTimeout(()=>setOpen(false),250)));
+    addEventListener('resize',()=>{if(nav.dataset.moved==='1'&&!nav.classList.contains('open')){const p=ballPos();place(cx(p.x),cy(p.y))}});
+    restore();
+  })();
 
   /* ACTIVE NAV */
   const secs = document.querySelectorAll('section[id]');
